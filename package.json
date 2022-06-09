@@ -1,0 +1,31 @@
+{
+  "name": "@kokkoro/utils",
+  "version": "0.0.1",
+  "description": "Utilities for kokkoro",
+  "main": "/lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kokkorojs/utils.git"
+  },
+  "keywords": [
+    "kokkoro"
+  ],
+  "author": "yuki",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kokkorojs/utils/issues"
+  },
+  "homepage": "https://github.com/kokkorojs/utils#readme",
+  "dependencies": {
+    "yaml": "^2.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.41"
+  },
+  "files": [
+    "lib"
+  ]
+}
