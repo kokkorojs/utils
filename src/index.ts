@@ -1,6 +1,18 @@
 import YAML from 'yaml';
+import { EventEmitter } from 'events';
+import { getLogger, Logger } from 'log4js';
 import { readFileSync, writeFileSync } from 'fs';
 import { readFile, writeFile } from 'fs/promises';
+
+declare global {
+  // 当前进程目录
+  var __workname: string;
+}
+global.__workname = process.cwd();
+
+export const emitter = new EventEmitter();
+export const logger: Logger = getLogger('[kokkoro]');
+logger.level = 'all';
 
 /**
  * YAML 模块扩展
