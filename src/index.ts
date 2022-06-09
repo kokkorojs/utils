@@ -43,7 +43,7 @@ YAML.write = (file: string, raw_data: any): Promise<void> => {
  * 同步读取 YAML 文件
  * 
  * @param path - 文件路径
- * @returns {object}
+ * @returns {unknown}
  */
 YAML.readSync = (path: string): unknown => {
   const str = readFileSync(path, 'utf8');
@@ -55,7 +55,6 @@ YAML.readSync = (path: string): unknown => {
  * 
  * @param file - 文件路径
  * @param raw_data - object 源数据
- * @returns writeFileSync
  */
 YAML.writeSync = (file: string, raw_data: any): void => {
   const data = YAML.stringify(raw_data);
