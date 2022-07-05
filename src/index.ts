@@ -132,3 +132,6 @@ export function deepMerge<T>(target: T, sources: T | undefined): T {
 export function deepClone<T>(object: T): T {
   return JSON.parse(JSON.stringify(object));
 }
+
+export { debounce } from './debounce';
+export { throttle } from './throttle';
